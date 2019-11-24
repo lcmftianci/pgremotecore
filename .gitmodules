@@ -1,0 +1,9 @@
+[submodule "third_party/libzmq"]
+	path = third_party/libzmq
+	url = https://github.com/zeromq/libzmq
+[submodule "third_party/asio"]
+	path = third_party/asio
+	url = https://github.com/chriskohlhoff/asio
+[submodule "third_party/tinyxml2"]
+	path = third_party/tinyxml2
+	url = https://github.com/leethomason/tinyxml2

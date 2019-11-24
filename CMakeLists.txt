@@ -49,8 +49,8 @@ add_definitions(-D_TTS_)
 add_definitions(-g)
  
 ADD_SUBDIRECTORY(netutil)
-ADD_SUBDIRECTORY(third_party/log4z)
-ADD_SUBDIRECTORY(third_party/websocketpp)
+ADD_SUBDIRECTORY(third_party/asio)
+ADD_SUBDIRECTORY(third_party/libzmq)
 ADD_SUBDIRECTORY(third_party/jsoncpp)
 ADD_SUBDIRECTORY(third_party/libuv)
 
