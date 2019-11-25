@@ -7,9 +7,9 @@ set (sfup_VERSION_MAJOR 0)
 set (sfup_VERSION_MINOR 1)
 set (sfup_VERSION_PATCH 1)
 
-option(BUILD_SIGNAL_SERVER "Build netutil" ON)
-option(BUILD_MEDIA_SERVER "Build streamutil" ON)
-option(BUILD_CONTROLLER_SERVER "Build streamsdk" ON)
+option(BUILD_NETUTIL_SERVER "Build netutil" ON)
+option(BUILD_STREAMUTIL_SERVER "Build streamutil" ON)
+option(BUILD_STREAMSDK_SERVER "Build streamsdk" ON)
 option(BUILD_TYPE_DEBUG "Build debug" ON)
 
 if(BUILD_TYPE_DEBUG)
@@ -53,10 +53,12 @@ ADD_SUBDIRECTORY(third_party/libzmq)
 ADD_SUBDIRECTORY(third_party/jsoncpp)
 ADD_SUBDIRECTORY(third_party/libuv)
 
-add_library(<name> [STATIC | SHARED | MODULE]
-            [EXCLUDE_FROM_ALL]
-            [source1] [source2] [...])
-ADD_EXECUTABLE(sfu_media ${MEDIA_SRC_LIST})
+#add_library(<name> [STATIC | SHARED | MODULE]
+#            [EXCLUDE_FROM_ALL]
+#            [source1] [source2] [...])
+#ADD_EXECUTABLE(sfu_media ${MEDIA_SRC_LIST})
+
+add_library(netutil SHARED NETUTIL_SRC_LIST)
 
 if(BUILD_SIGNAL_SERVER)
 	ADD_EXECUTABLE(sfu_signal_server ${SIGNAL_SRC_LIST})

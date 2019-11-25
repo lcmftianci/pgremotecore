@@ -22,3 +22,6 @@
 [submodule "third_party/websocketpp"]
 	path = third_party/websocketpp
 	url = https://github.com/zaphoyd/websocketpp
+[submodule "third_party/libuv"]
+	path = third_party/libuv
+	url = https://github.com/libuv/libuv
